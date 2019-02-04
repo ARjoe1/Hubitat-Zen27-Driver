@@ -5,7 +5,7 @@
  * 2018-10-27 - Initial release
  * 2018-11-18 - Fixes for parameters due to platform changes
  * 2018-11-19 - Fix LED parameter for all values
- * 2019-02-03 - Ported to HE
+ * 2019-02-03 - Ported to HE from https://github.com/doncaruana/SmartThings-doncaruana no changes 
  *
  *  Supported Command Classes
  *         Association v2
