@@ -51,7 +51,7 @@
  */
 
 metadata {
-	definition (name: "Zooz Zen27 Dimmer", namespace: "doncaruana", author: "Don Caruana", ocfDeviceType: "oic.d.light", mnmn: "SmartThings", vid: "generic-dimmer") {
+	definition (name: "Zooz Zen27 Dimmer", namespace: "AR", author: "Don Caruana", ocfDeviceType: "oic.d.light", mnmn: "Hubitat", vid: "generic-dimmer") {
 		capability "Switch Level"
 		capability "Actuator"
 		capability "Health Check"
@@ -101,7 +101,7 @@ metadata {
 		input "minBright", "number", title: "Minimum Brightness", description: "Minimum brightness that the light can go to", required: false, defaultValue: 1, range: "1..99"
 	}
 
-	tiles(scale: 2) {
+/*	tiles(scale: 2) {
 		multiAttributeTile(name:"switch", type: "lighting", width: 6, height: 4, canChangeIcon: true){
 			tileAttribute ("device.switch", key: "PRIMARY_CONTROL") {
 				attributeState "on", label:'${name}', action:"switch.off", icon:"st.switches.switch.on", backgroundColor:"#00a0dc", nextState:"turningOff"
@@ -126,6 +126,7 @@ metadata {
 		details(["switch", "level", "refresh"])
 
 	}
+	*/
 }
 
 def installed() {
